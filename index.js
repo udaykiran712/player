@@ -37,7 +37,7 @@ app.get("/player/",async (request,response)=>{
     response.send(playersArray)
 })
 
-app.post("/player/",async (request,response)=>{
+app.post("/add/player/",async (request,response)=>{
     const playerDetails = request.body
     console.log(request.body)
     const {name,age,score} = playerDetails
@@ -58,7 +58,7 @@ app.post("/player/",async (request,response)=>{
 
 })
 
-app.put("/player/",async (request,response)=>{
+app.put("/edit/player/",async (request,response)=>{
 const details = request.body;
 console.log(details)
 const {name} = details
