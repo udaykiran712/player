@@ -31,7 +31,7 @@ process.exit(1)
 initializeServer()
 
 
-app.get("/player/",async (request,response)=>{
+app.get("/",async (request,response)=>{
     const playersQuery = `SELECT * FROM player`
     const playersArray =await  db.all(playersQuery)
     response.send(playersArray)
