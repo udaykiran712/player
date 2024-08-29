@@ -74,3 +74,6 @@ WHERE name = '${name}'
 db.run(query)
 response.send("UPDATED SUCCESSFULLy")
 })
+
+
+module.exports = app;
