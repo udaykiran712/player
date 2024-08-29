@@ -21,10 +21,9 @@ app.listen(4000,()=>{
     console.log("Server is present")
 })
 
-
 }
 catch(e){
-console.log("Db Erroe")
+console.log(`DB ERROR: ${e.message}`)
 process.exit(1)
 }
 
